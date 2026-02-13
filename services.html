@@ -4,6 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Services - RapidRise</title>
+    <!-- Google Tag Manager -->
+    <script>
+      (function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+        var f = d.getElementsByTagName(s)[0],
+          j = d.createElement(s),
+          dl = l != "dataLayer" ? "&l=" + l : "";
+        j.async = true;
+        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+        f.parentNode.insertBefore(j, f);
+      })(window, document, "script", "dataLayer", "GTM-5LLHN795");
+    </script>
+    <!-- End Google Tag Manager -->
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Inter Font -->
@@ -30,6 +44,16 @@
     <script src="main.js"></script>
   </head>
   <body class="bg-slate-50 text-gray-800">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript
+      ><iframe
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5LLHN795"
+        height="0"
+        width="0"
+        style="display: none; visibility: hidden"
+      ></iframe
+    ></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Header Section -->
     <header class="bg-green-100 shadow-sm py-2">
       <div class="container mx-auto px-4 flex justify-between items-center">
@@ -336,6 +360,16 @@
             })
               .then((response) => {
                 if (response.ok) {
+                  // Push to data layer for GTM
+                  window.dataLayer = window.dataLayer || [];
+                  window.dataLayer.push({
+                    'event': 'form_submission',
+                    'formName': 'Consultation Request',
+                    'company': formData.get('company'),
+                    'marketingBudget': formData.get('marketing_budget'),
+                    'revenue': formData.get('annual_revenue')
+                  });
+                  
                   contactForm.classList.add("hidden");
                   document.getElementById("success-message").classList.remove("hidden");
                   window.scrollTo({ top: document.getElementById("contact").offsetTop - 100, behavior: "smooth" });
