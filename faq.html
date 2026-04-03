@@ -58,6 +58,18 @@
           max-width: 768px;
         }
       }
+      details.faq-item > summary {
+        list-style: none;
+      }
+      details.faq-item > summary::-webkit-details-marker {
+        display: none;
+      }
+      .faq-chevron {
+        transition: transform 0.2s ease;
+      }
+      details.faq-item[open] > summary .faq-chevron {
+        transform: rotate(180deg);
+      }
     </style>
 
     <script src="main.js"></script>
@@ -70,14 +82,6 @@
       "mainEntity": [
         {
           "@type": "Question",
-          "name": "What is the engagement model?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "I work on a retained basis with a performance component where appropriate. This keeps incentives aligned to signed commercial outcomes and revenue milestones, not hours billed."
-          }
-        },
-        {
-          "@type": "Question",
           "name": "Who is RapidRise for?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -86,18 +90,26 @@
         },
         {
           "@type": "Question",
-          "name": "What problems do you solve most often?",
+          "name": "Do you work with non technical founders?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Most engagements start with one of these: Pipeline looks busy but does not convert, deals stall after early interest then die in procurement, messaging is too technical for economic buyers, pricing and packaging are inconsistent or under priced, forecasting is unreliable, or founder led selling is the bottleneck."
+            "text": "Usually not. My specialist value is bridging deep technical capability and enterprise buying reality. I am most effective when the founder or core leadership team is technical, and wants a commercial counterpart to translate value, shape deals, and navigate procurement. If you are not technical but you have a strong technical cofounder or technical product leader who will stay directly involved, we can still be a fit."
           }
         },
         {
           "@type": "Question",
-          "name": "What outcomes can I expect?",
+          "name": "What problems do you solve most often?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "The goal is predictable enterprise conversion, not more activity. Typical outcomes include higher conversion from technical interest to commercial commitment, clearer deal structure for multi year contracts, better pipeline quality, and forecast hygiene leadership can trust."
+            "text": "Most engagements start with one of these: Pipeline looks busy but does not convert; deals stall after early interest then die in procurement; messaging is too technical for economic buyers; pricing and packaging are inconsistent or under priced; forecasting is unreliable; founder led selling is the bottleneck."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What is the engagement model?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "I work on a retained basis with a performance component where appropriate. This keeps incentives aligned to signed commercial outcomes and revenue milestones, not hours billed."
           }
         },
         {
@@ -118,6 +130,22 @@
         },
         {
           "@type": "Question",
+          "name": "How do you handle long enterprise procurement cycles?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We design the procurement path early, including security review, compliance, stakeholder mapping, and a proof of value structure that creates urgency. The objective is to remove unknowns before they become delays."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What outcomes can I expect?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The goal is predictable enterprise conversion, not more activity. Typical outcomes include higher conversion from technical interest to commercial commitment, clearer deal structure for multi year contracts, better pipeline quality, and forecast hygiene leadership can trust."
+          }
+        },
+        {
+          "@type": "Question",
           "name": "What does Revenue Architecture mean?",
           "acceptedAnswer": {
             "@type": "Answer",
@@ -129,7 +157,39 @@
           "name": "Why hire a fractional CRO or interim commercial lead instead of a full time commercial lead?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "At Series A and Series B, you usually need a builder, not a manager. A full time VP from a large organisation is often excellent at running an existing machine, but many have not built the first repeatable enterprise motion from scratch. I install the revenue engine first, then you can hire a permanent commercial leader into a role that is set up to succeed."
+            "text": "At Series A and Series B, you usually need a builder, not a manager. A full time VP from a large organisation is often excellent at running an existing machine, but many have not built the first repeatable enterprise motion from scratch. I install the revenue engine first, positioning, offer design, qualification discipline, procurement path, and forecasting cadence. Once it is working, you can hire a permanent commercial leader into a role that is set up to succeed."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What makes RapidRise different from a sales consultancy?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most consultancies provide advice or training. I install a commercial operating system and work directly on the deals and the structure that closes them. The objective is predictable enterprise conversion, not activity metrics."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do you help with outbound and sourcing, or only conversion?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Both, but I prioritise conversion first. Many teams already have interest, they just cannot turn it into signed contracts. Once conversion and positioning are solid, we can scale outbound with confidence."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do we start?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "We start with a short discovery call to understand your commercial situation and whether there is a fit. If there is, the first formal step is a paid Commercial Architecture Review: a structured, two-week engagement covering your current deal pipeline, buyer personas, qualification gaps, messaging and positioning, and a 90-day commercial roadmap. This is priced as a fixed-fee piece of work, and it stands alone as a useful deliverable regardless of what comes next. It also means you see the quality of my thinking applied to your business before committing to anything larger. If a longer engagement makes sense after the review, I will propose a focused plan with clear deliverables and success measures."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does the Commercial Architecture Review include?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "The review is a structured, two-week piece of work delivered as a written report. It covers five areas: an assessment of your current deal pipeline and where deals are stalling; buyer persona mapping to identify whether you are engaging the right people at the right level; a qualification gap analysis showing where your process is losing commercial ground; messaging and positioning recommendations for your specific buyer archetypes; and a 90-day commercial roadmap with prioritised actions. The deliverable is yours to keep and act on, whether or not we continue working together."
           }
         }
       ]
@@ -147,7 +207,7 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <!-- Header Sectio -->
+    <!-- Header Section -->
     <header class="bg-green-100 shadow-sm py-2">
       <div class="container mx-auto px-4 flex justify-between items-center">
         <a href="index.html" class="flex items-center space-x-3">
@@ -268,31 +328,40 @@
             FAQ
           </h1>
 
-          <div class="max-w-4xl mx-auto space-y-6">
-            <!-- FAQ 1 -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md border-2 border-green-100"
-            >
-              <h3 class="text-xl font-semibold text-green-700 mb-3">
-                What is the engagement model?
-              </h3>
-              <div class="text-gray-600">
-                <p>
-                  I work on a retained basis with a performance component where
-                  appropriate. This keeps incentives aligned to signed
-                  commercial outcomes and revenue milestones, not hours billed.
-                </p>
-              </div>
+          <div class="max-w-4xl mx-auto space-y-4">
+            <!-- Section 1: Who we work with -->
+            <div class="pt-2 pb-2 text-center">
+              <h2 class="text-xl md:text-2xl font-bold text-slate-800">
+                Who we work with
+              </h2>
             </div>
 
-            <!-- FAQ 2 -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md border-2 border-green-100"
-            >
-              <h3 class="text-xl font-semibold text-green-700 mb-3">
-                Who is RapidRise for?
-              </h3>
-              <div class="text-gray-600">
+            <details class="faq-item bg-white rounded-lg shadow-md border-2 border-green-100">
+              <summary
+                class="cursor-pointer flex items-center justify-between gap-4 p-5 md:p-6 text-left"
+              >
+                <span
+                  class="text-lg md:text-xl font-semibold text-green-700 pr-2"
+                  >Who is RapidRise for?</span
+                >
+                <svg
+                  class="faq-chevron w-6 h-6 shrink-0 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-600 border-t border-green-50"
+              >
                 <p>
                   I work with Series A and Series B technical founders where the
                   product is strong, demand signals exist, but revenue is not
@@ -301,18 +370,74 @@
                   software.
                 </p>
               </div>
-            </div>
+            </details>
 
-            <!-- FAQ 3 -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md border-2 border-green-100"
-            >
-              <h3 class="text-xl font-semibold text-green-700 mb-3">
-                What problems do you solve most often?
-              </h3>
-              <div class="text-gray-600">
-                <p class="mb-2">Most engagements start with one of these:</p>
-                <ul class="list-none space-y-1 ml-0">
+            <details class="faq-item bg-white rounded-lg shadow-md border-2 border-green-100">
+              <summary
+                class="cursor-pointer flex items-center justify-between gap-4 p-5 md:p-6 text-left"
+              >
+                <span
+                  class="text-lg md:text-xl font-semibold text-green-700 pr-2"
+                  >Do you work with non technical founders?</span
+                >
+                <svg
+                  class="faq-chevron w-6 h-6 shrink-0 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-600 border-t border-green-50"
+              >
+                <p>
+                  Usually not. My specialist value is bridging deep technical
+                  capability and enterprise buying reality. I am most effective
+                  when the founder or core leadership team is technical, and
+                  wants a commercial counterpart to translate value, shape
+                  deals, and navigate procurement. If you are not technical but
+                  you have a strong technical cofounder or technical product
+                  leader who will stay directly involved, we can still be a fit.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item bg-white rounded-lg shadow-md border-2 border-green-100">
+              <summary
+                class="cursor-pointer flex items-center justify-between gap-4 p-5 md:p-6 text-left"
+              >
+                <span
+                  class="text-lg md:text-xl font-semibold text-green-700 pr-2"
+                  >What problems do you solve most often?</span
+                >
+                <svg
+                  class="faq-chevron w-6 h-6 shrink-0 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-600 border-t border-green-50 space-y-3"
+              >
+                <p>Most engagements start with one of these:</p>
+                <ul class="list-disc list-outside pl-5 space-y-1">
                   <li>Pipeline looks busy but does not convert</li>
                   <li>
                     Deals stall after early interest, then die in procurement
@@ -325,34 +450,75 @@
                   <li>Founder led selling is the bottleneck</li>
                 </ul>
               </div>
+            </details>
+
+            <!-- Section 2: How engagements work -->
+            <div class="pt-10 pb-2 text-center">
+              <h2 class="text-xl md:text-2xl font-bold text-slate-800">
+                How engagements work
+              </h2>
             </div>
 
-            <!-- FAQ 4 -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md border-2 border-green-100"
-            >
-              <h3 class="text-xl font-semibold text-green-700 mb-3">
-                What outcomes can I expect?
-              </h3>
-              <div class="text-gray-600">
+            <details class="faq-item bg-white rounded-lg shadow-md border-2 border-green-100">
+              <summary
+                class="cursor-pointer flex items-center justify-between gap-4 p-5 md:p-6 text-left"
+              >
+                <span
+                  class="text-lg md:text-xl font-semibold text-green-700 pr-2"
+                  >What is the engagement model?</span
+                >
+                <svg
+                  class="faq-chevron w-6 h-6 shrink-0 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-600 border-t border-green-50"
+              >
                 <p>
-                  The goal is predictable enterprise conversion, not more
-                  activity. Typical outcomes include higher conversion from
-                  technical interest to commercial commitment, clearer deal
-                  structure for multi year contracts, better pipeline quality,
-                  and forecast hygiene leadership can trust.
+                  I work on a retained basis with a performance component where
+                  appropriate. This keeps incentives aligned to signed
+                  commercial outcomes and revenue milestones, not hours billed.
                 </p>
               </div>
-            </div>
+            </details>
 
-            <!-- FAQ 5 -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md border-2 border-green-100"
-            >
-              <h3 class="text-xl font-semibold text-green-700 mb-3">
-                How do you work, advisory or hands on execution?
-              </h3>
-              <div class="text-gray-600">
+            <details class="faq-item bg-white rounded-lg shadow-md border-2 border-green-100">
+              <summary
+                class="cursor-pointer flex items-center justify-between gap-4 p-5 md:p-6 text-left"
+              >
+                <span
+                  class="text-lg md:text-xl font-semibold text-green-700 pr-2"
+                  >How do you work, advisory or hands on execution?</span
+                >
+                <svg
+                  class="faq-chevron w-6 h-6 shrink-0 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-600 border-t border-green-50"
+              >
                 <p>
                   Both. I operate as a strategic adviser with operator level
                   execution. I will work directly on the narrative, offer
@@ -361,32 +527,146 @@
                   run the system without me.
                 </p>
               </div>
-            </div>
+            </details>
 
-            <!-- FAQ 6 -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md border-2 border-green-100"
-            >
-              <h3 class="text-xl font-semibold text-green-700 mb-3">
-                What is your typical engagement length?
-              </h3>
-              <div class="text-gray-600">
+            <details class="faq-item bg-white rounded-lg shadow-md border-2 border-green-100">
+              <summary
+                class="cursor-pointer flex items-center justify-between gap-4 p-5 md:p-6 text-left"
+              >
+                <span
+                  class="text-lg md:text-xl font-semibold text-green-700 pr-2"
+                  >What is your typical engagement length?</span
+                >
+                <svg
+                  class="faq-chevron w-6 h-6 shrink-0 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-600 border-t border-green-50"
+              >
                 <p>
                   Most clients engage for 60 to 120 days to install the revenue
                   engine and stabilise the pipeline. Some then retain me
                   fractionally for ongoing leadership and key deal support.
                 </p>
               </div>
+            </details>
+
+            <details class="faq-item bg-white rounded-lg shadow-md border-2 border-green-100">
+              <summary
+                class="cursor-pointer flex items-center justify-between gap-4 p-5 md:p-6 text-left"
+              >
+                <span
+                  class="text-lg md:text-xl font-semibold text-green-700 pr-2"
+                  >How do you handle long enterprise procurement cycles?</span
+                >
+                <svg
+                  class="faq-chevron w-6 h-6 shrink-0 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-600 border-t border-green-50"
+              >
+                <p>
+                  We design the procurement path early, including security
+                  review, compliance, stakeholder mapping, and a proof of value
+                  structure that creates urgency. The objective is to remove
+                  unknowns before they become delays.
+                </p>
+              </div>
+            </details>
+
+            <!-- Section 3: Outcomes and differentiation -->
+            <div class="pt-10 pb-2 text-center">
+              <h2 class="text-xl md:text-2xl font-bold text-slate-800">
+                Outcomes and differentiation
+              </h2>
             </div>
 
-            <!-- FAQ 7 -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md border-2 border-green-100"
-            >
-              <h3 class="text-xl font-semibold text-green-700 mb-3">
-                What does Revenue Architecture mean?
-              </h3>
-              <div class="text-gray-600">
+            <details class="faq-item bg-white rounded-lg shadow-md border-2 border-green-100">
+              <summary
+                class="cursor-pointer flex items-center justify-between gap-4 p-5 md:p-6 text-left"
+              >
+                <span
+                  class="text-lg md:text-xl font-semibold text-green-700 pr-2"
+                  >What outcomes can I expect?</span
+                >
+                <svg
+                  class="faq-chevron w-6 h-6 shrink-0 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-600 border-t border-green-50"
+              >
+                <p>
+                  The goal is predictable enterprise conversion, not more
+                  activity. Typical outcomes include higher conversion from
+                  technical interest to commercial commitment, clearer deal
+                  structure for multi year contracts, better pipeline quality,
+                  and forecast hygiene leadership can trust.
+                </p>
+              </div>
+            </details>
+
+            <details class="faq-item bg-white rounded-lg shadow-md border-2 border-green-100">
+              <summary
+                class="cursor-pointer flex items-center justify-between gap-4 p-5 md:p-6 text-left"
+              >
+                <span
+                  class="text-lg md:text-xl font-semibold text-green-700 pr-2"
+                  >What does Revenue Architecture mean?</span
+                >
+                <svg
+                  class="faq-chevron w-6 h-6 shrink-0 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-600 border-t border-green-50"
+              >
                 <p>
                   Revenue Architecture is the commercial operating system that
                   makes enterprise revenue repeatable. It includes positioning,
@@ -395,17 +675,35 @@
                   not sales training, it is system design plus execution.
                 </p>
               </div>
-            </div>
+            </details>
 
-            <!-- FAQ 8 -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md border-2 border-green-100"
-            >
-              <h3 class="text-xl font-semibold text-green-700 mb-3">
-                Why hire a fractional CRO or interim commercial lead instead of
-                a full time commercial lead?
-              </h3>
-              <div class="text-gray-600">
+            <details class="faq-item bg-white rounded-lg shadow-md border-2 border-green-100">
+              <summary
+                class="cursor-pointer flex items-center justify-between gap-4 p-5 md:p-6 text-left"
+              >
+                <span
+                  class="text-lg md:text-xl font-semibold text-green-700 pr-2"
+                  >Why hire a fractional CRO or interim commercial lead instead
+                  of a full time commercial lead?</span
+                >
+                <svg
+                  class="faq-chevron w-6 h-6 shrink-0 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-600 border-t border-green-50"
+              >
                 <p>
                   At Series A and Series B, you usually need a builder, not a
                   manager. A full time VP from a large organisation is often
@@ -417,70 +715,34 @@
                   commercial leader into a role that is set up to succeed.
                 </p>
               </div>
-            </div>
+            </details>
 
-            <!-- FAQ 9 -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md border-2 border-green-100"
-            >
-              <h3 class="text-xl font-semibold text-green-700 mb-3">
-                Do you help with outbound and sourcing, or only conversion?
-              </h3>
-              <div class="text-gray-600">
-                <p>
-                  Both, but I prioritise conversion first. Many teams already
-                  have interest, they just cannot turn it into signed contracts.
-                  Once conversion and positioning are solid, we can scale
-                  outbound with confidence.
-                </p>
-              </div>
-            </div>
-
-            <!-- FAQ 10 -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md border-2 border-green-100"
-            >
-              <h3 class="text-xl font-semibold text-green-700 mb-3">
-                Do you work with non technical founders?
-              </h3>
-              <div class="text-gray-600">
-                <p>
-                  Usually not. My specialist value is bridging deep technical
-                  capability and enterprise buying reality. I am most effective
-                  when the founder or core leadership team is technical, and
-                  wants a commercial counterpart to translate value, shape
-                  deals, and navigate procurement. If you are not technical but
-                  you have a strong technical cofounder or technical product
-                  leader who will stay directly involved, we can still be a fit.
-                </p>
-              </div>
-            </div>
-
-            <!-- FAQ 11 -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md border-2 border-green-100"
-            >
-              <h3 class="text-xl font-semibold text-green-700 mb-3">
-                How do you handle long enterprise procurement cycles?
-              </h3>
-              <div class="text-gray-600">
-                <p>
-                  We design the procurement path early, including security
-                  review, compliance, stakeholder mapping, and a proof of value
-                  structure that creates urgency. The objective is to remove
-                  unknowns before they become delays.
-                </p>
-              </div>
-            </div>
-
-            <!-- FAQ 12 -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md border-2 border-green-100"
-            >
-              <h3 class="text-xl font-semibold text-green-700 mb-3">
-                What makes RapidRise different from a sales consultancy?
-              </h3>
-              <div class="text-gray-600">
+            <details class="faq-item bg-white rounded-lg shadow-md border-2 border-green-100">
+              <summary
+                class="cursor-pointer flex items-center justify-between gap-4 p-5 md:p-6 text-left"
+              >
+                <span
+                  class="text-lg md:text-xl font-semibold text-green-700 pr-2"
+                  >What makes RapidRise different from a sales consultancy?</span
+                >
+                <svg
+                  class="faq-chevron w-6 h-6 shrink-0 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-600 border-t border-green-50"
+              >
                 <p>
                   Most consultancies provide advice or training. I install a
                   commercial operating system and work directly on the deals and
@@ -488,35 +750,132 @@
                   enterprise conversion, not activity metrics.
                 </p>
               </div>
-            </div>
+            </details>
 
-            <!-- FAQ 13 -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md border-2 border-green-100"
-            >
-              <h3 class="text-xl font-semibold text-green-700 mb-3">
-                How do we start?
-              </h3>
-              <div class="text-gray-600">
+            <details class="faq-item bg-white rounded-lg shadow-md border-2 border-green-100">
+              <summary
+                class="cursor-pointer flex items-center justify-between gap-4 p-5 md:p-6 text-left"
+              >
+                <span
+                  class="text-lg md:text-xl font-semibold text-green-700 pr-2"
+                  >Do you help with outbound and sourcing, or only conversion?</span
+                >
+                <svg
+                  class="faq-chevron w-6 h-6 shrink-0 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-600 border-t border-green-50"
+              >
                 <p>
-                  We start with a short discovery call to understand your commercial situation and whether there is a fit. If there is, the first formal step is a paid Commercial Architecture Review: a structured, two-week engagement covering your current deal pipeline, buyer personas, qualification gaps, messaging and positioning, and a 90-day commercial roadmap. This is a fixed-fee piece of work at £5,000, and it stands alone as a useful deliverable regardless of what comes next. It also means you see the quality of my thinking applied to your business before committing to anything larger. If a longer engagement makes sense after the review, I will propose a focused plan with clear deliverables and success measures.
+                  Both, but I prioritise conversion first. Many teams already
+                  have interest, they just cannot turn it into signed contracts.
+                  Once conversion and positioning are solid, we can scale
+                  outbound with confidence.
                 </p>
               </div>
+            </details>
+
+            <!-- Section 4: Getting started -->
+            <div class="pt-10 pb-2 text-center">
+              <h2 class="text-xl md:text-2xl font-bold text-slate-800">
+                Getting started
+              </h2>
             </div>
 
-            <!-- FAQ: What does the Commercial Architecture Review include? -->
-            <div
-              class="bg-white p-6 rounded-lg shadow-md border-2 border-green-100"
-            >
-              <h3 class="text-xl font-semibold text-green-700 mb-3">
-                What does the Commercial Architecture Review include?
-              </h3>
-              <div class="text-gray-600">
+            <details class="faq-item bg-white rounded-lg shadow-md border-2 border-green-100">
+              <summary
+                class="cursor-pointer flex items-center justify-between gap-4 p-5 md:p-6 text-left"
+              >
+                <span class="text-lg md:text-xl font-semibold text-green-700 pr-2"
+                  >How do we start?</span
+                >
+                <svg
+                  class="faq-chevron w-6 h-6 shrink-0 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-600 border-t border-green-50"
+              >
                 <p>
-                  The review is a structured, two-week piece of work delivered as a written report. It covers five areas: an assessment of your current deal pipeline and where deals are stalling; buyer persona mapping to identify whether you are engaging the right people at the right level; a qualification gap analysis showing where your process is losing commercial ground; messaging and positioning recommendations for your specific buyer archetypes; and a 90-day commercial roadmap with prioritised actions. The deliverable is yours to keep and act on, whether or not we continue working together.
+                  We start with a short discovery call to understand your
+                  commercial situation and whether there is a fit. If there is,
+                  the first formal step is a paid Commercial Architecture
+                  Review: a structured, two-week engagement covering your current
+                  deal pipeline, buyer personas, qualification gaps, messaging
+                  and positioning, and a 90-day commercial roadmap. This is
+                  priced as a fixed-fee piece of work, and it stands alone as a
+                  useful deliverable regardless of what comes next. It also
+                  means you see the quality of my thinking applied to your
+                  business before committing to anything larger. If a longer
+                  engagement makes sense after the review, I will propose a
+                  focused plan with clear deliverables and success measures.
                 </p>
               </div>
-            </div>
+            </details>
+
+            <details class="faq-item bg-white rounded-lg shadow-md border-2 border-green-100">
+              <summary
+                class="cursor-pointer flex items-center justify-between gap-4 p-5 md:p-6 text-left"
+              >
+                <span
+                  class="text-lg md:text-xl font-semibold text-green-700 pr-2"
+                  >What does the Commercial Architecture Review include?</span
+                >
+                <svg
+                  class="faq-chevron w-6 h-6 shrink-0 text-green-600"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  />
+                </svg>
+              </summary>
+              <div
+                class="px-5 md:px-6 pb-5 md:pb-6 text-sm md:text-base text-gray-600 border-t border-green-50"
+              >
+                <p>
+                  The review is a structured, two-week piece of work delivered
+                  as a written report. It covers five areas: an assessment of
+                  your current deal pipeline and where deals are stalling; buyer
+                  persona mapping to identify whether you are engaging the right
+                  people at the right level; a qualification gap analysis showing
+                  where your process is losing commercial ground; messaging and
+                  positioning recommendations for your specific buyer archetypes;
+                  and a 90-day commercial roadmap with prioritised actions. The
+                  deliverable is yours to keep and act on, whether or not we
+                  continue working together.
+                </p>
+              </div>
+            </details>
           </div>
         </div>
       </section>
@@ -529,6 +888,18 @@
           &copy; <span id="current-year">2026</span> RapidRise. All rights
           reserved.
         </p>
+        <div class="border-t border-gray-700 pt-4">
+          <p class="text-sm text-gray-500">
+            Looking for Estate Infrastructure and Deep Tech Advisory?
+            <a
+              href="https://www.rapidriseadvisory.com"
+              class="text-green-500 hover:text-green-400 transition duration-300"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Visit RapidRiseAdvisory.com</a
+            >
+          </p>
+        </div>
       </div>
     </footer>
 
